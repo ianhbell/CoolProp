@@ -695,13 +695,13 @@ double AbstractCubic::d3_alphar_dxidxjdxk(double tau, double delta, const std::v
 double SRK::a0_ii(std::size_t i)
 {
     // Values from Soave, 1972 (Equilibrium constants from a ..)
-    double a = 0.42747*R_u*R_u*Tc[i]*Tc[i]/pc[i];
+    double a = 0.42748023354034140439*R_u*R_u*Tc[i]*Tc[i]/pc[i];
     return a;
 }
 double SRK::b0_ii(std::size_t i)
 {
     // Values from Soave, 1972 (Equilibrium constants from a ..)
-    double b = 0.08664*R_u*Tc[i]/pc[i];
+    double b = 0.086640349964957721589*R_u*Tc[i]/pc[i];
     return b;
 }
 double SRK::m_ii(std::size_t i)
@@ -717,12 +717,12 @@ double SRK::m_ii(std::size_t i)
 
 double PengRobinson::a0_ii(std::size_t i)
 {
-    double a = 0.45724*R_u*R_u*Tc[i]*Tc[i]/pc[i];
+    double a = 0.4572355289213821893*R_u*R_u*Tc[i]*Tc[i]/pc[i];
     return a;
 }
 double PengRobinson::b0_ii(std::size_t i)
 {
-    double b = 0.07780*R_u*Tc[i]/pc[i];
+    double b = 0.077796073903888455972*R_u*Tc[i]/pc[i];
     return b;
 }
 double PengRobinson::m_ii(std::size_t i)
